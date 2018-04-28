@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/index.php" line="222" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="dff21193-7a8a-4957-9b47-dc1fff2f170e" name="Default" comment="hjjh">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="146" column="75" selection-start-line="146" selection-start-column="75" selection-end-line="146" selection-end-column="75" />
+            <state relative-caret-position="406">
+              <caret line="235" column="92" lean-forward="true" selection-start-line="235" selection-start-column="92" selection-end-line="235" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -137,16 +135,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524844145586</updated>
-      <workItem from="1524844146911" duration="20634000" />
+      <workItem from="1524844146911" duration="22179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20634000" />
+    <option name="totallyTimeSpent" value="22179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="15" width="1282" height="786" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="eSnippet Pro" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -211,8 +208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="146" column="75" selection-start-line="146" selection-start-column="75" selection-end-line="146" selection-end-column="75" />
+        <state relative-caret-position="406">
+          <caret line="235" column="92" lean-forward="true" selection-start-line="235" selection-start-column="92" selection-end-line="235" selection-end-column="92" />
         </state>
       </provider>
     </entry>
