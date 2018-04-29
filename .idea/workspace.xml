@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dff21193-7a8a-4957-9b47-dc1fff2f170e" name="Default" comment="hjjh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,28 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1844">
-              <caret line="328" column="146" lean-forward="true" selection-start-line="328" selection-start-column="146" selection-end-line="328" selection-end-column="146" />
+            <state relative-caret-position="374">
+              <caret line="587" column="65" selection-start-line="587" selection-start-column="65" selection-end-line="587" selection-end-column="65" />
               <folding>
                 <element signature="e#55193#55254#0#HTML" expanded="true" />
                 <element signature="e#59316#59377#0#HTML" expanded="true" />
                 <element signature="e#61984#62045#0#HTML" expanded="true" />
-                <element signature="e#62610#62635#0#HTML" expanded="true" />
-                <element signature="e#63552#63573#0#HTML" expanded="true" />
+                <element signature="e#63508#63533#0#HTML" expanded="true" />
+                <element signature="e#63794#63813#0#HTML" expanded="true" />
+                <element signature="e#64202#64296#0#HTML" expanded="true" />
+                <element signature="e#64699#64730#0#HTML" expanded="true" />
                 <element signature="e#63772#63826#0#HTML" expanded="true" />
+                <element signature="e#65578#65602#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="success.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="success.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/success.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="1340">
+              <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -92,8 +95,8 @@
       <list>
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/success.html" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -106,7 +109,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="747" />
     <option name="y" value="408" />
     <option name="width" value="533" />
@@ -161,12 +164,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524844145586</updated>
-      <workItem from="1524844146911" duration="38499000" />
+      <workItem from="1524844146911" duration="43634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38499000" />
+    <option name="totallyTimeSpent" value="43634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="15" width="1282" height="786" extended-state="7" />
@@ -180,7 +183,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.112676054" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24765626" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24765626" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="LuaJ" />
       <window_info anchor="right" id="Database" order="4" />
@@ -259,25 +262,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1844">
-          <caret line="328" column="146" lean-forward="true" selection-start-line="328" selection-start-column="146" selection-end-line="328" selection-end-column="146" />
+        <state relative-caret-position="374">
+          <caret line="587" column="65" selection-start-line="587" selection-start-column="65" selection-end-line="587" selection-end-column="65" />
           <folding>
             <element signature="e#55193#55254#0#HTML" expanded="true" />
             <element signature="e#59316#59377#0#HTML" expanded="true" />
             <element signature="e#61984#62045#0#HTML" expanded="true" />
-            <element signature="e#62610#62635#0#HTML" expanded="true" />
-            <element signature="e#63552#63573#0#HTML" expanded="true" />
+            <element signature="e#63508#63533#0#HTML" expanded="true" />
+            <element signature="e#63794#63813#0#HTML" expanded="true" />
+            <element signature="e#64202#64296#0#HTML" expanded="true" />
+            <element signature="e#64699#64730#0#HTML" expanded="true" />
             <element signature="e#63772#63826#0#HTML" expanded="true" />
+            <element signature="e#65578#65602#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
         </state>
       </provider>
     </entry>

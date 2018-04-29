@@ -21,7 +21,7 @@
     
     <script>
         window.onload = function () {
-            for (let i = 0; i < 7; i++) {
+            for (let i = 0; i < 14; i++) {
                 let elem = $('#slider-vertical' + i);
                 (function (i) {
                     elem.slider({
@@ -64,6 +64,11 @@
 
         .ui-slider-handle {
             background: #a42021 !important;
+            border: none !important;
+        }
+
+        .slider-wishful .ui-slider-handle {
+            background: #972ba4 !important;
         }
 
         hr {
@@ -73,6 +78,13 @@
             border-top: 1px solid #559ecc;
             margin: 1em 0;
             padding: 0;
+        }
+
+
+        .slider {
+            width: 100%;
+            left: 50%;
+            right: 50%;
         }
 
         .main-container {
@@ -85,6 +97,24 @@
 
         article {
             padding: 20px 10px;
+        }
+
+        .child {
+            /*display: inline-block;*/
+            /*background:blue;*/
+            /*margin:10px 0 0 2%;*/
+            flex-grow: 1;
+            /*height:100px;*/
+            width: 50%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            justify-content: flex-start;
+            width: 100%;
         }
 
         .freebirdCommonViewSecurequizSecureQuizBannerContainer {
@@ -4093,115 +4123,196 @@
                             </div>
                         </div>
                         <div class="freebirdFormviewerViewItemsPagebreakDescriptionText" style="padding-bottom: 15px; white-space: normal !important;">
-                            В этой части Вам нужно будет оценить самого себя с помощью 10-ми бальной шкалы по ниже перечисленным параметрам, где 1- это самый минимальный показатель, а 10- максимальный. Например, если бы все люди разделились по росту, тогда 1- это самый маленький рост на земле, а 10- самый высокий. Вам нужно выбрать, где находитесь Вы, относительно этих параметров!
+                            В этой части Вам нужно будет оценить самого себя с помощью 10-ми бальной шкалы по ниже перечисленным параметрам, где 1 - это самый минимальный показатель, а 10 - максимальный. Например, если бы все люди разделились по росту, тогда 1 - это самый маленький рост на земле, а 10 - самый высокий.
+                            Вам нужно выбрать, где находитесь Вы, относительно этих параметров!
+                            На шкалах с левой стороны нужно отметить ваши текущие параметры, справа - желаемые.
                         </div>
 
-                                                                            <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">1. Здоровье <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                                                <div class="wrapper">
+                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">1. Здоровье <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical0" style="height:400px;"></div>
-                                    <p>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical0" style="height:400px; margin: 0 auto;"></div>
                                         <input hidden class="form-check-input" type="text" name="1. Здоровье" id="amount0" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                                                                                <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">2. Ум и способности <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical1" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="2. Ум и способности" id="amount1" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                                                                                <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">3. Характер <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">1. Здоровье(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical1" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="1. Здоровье(желаемое)" id="amount1" style="border:0; color:#f6931f; font-weight: lighter;" />
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical2" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="3. Характер" id="amount2" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                                                                                <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">4. Отношение к окружающим <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">2. Ум и способности <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical2" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="2. Ум и способности" id="amount2" style="border:0; color:#f6931f; font-weight: lighter;" />
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical3" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="4. Отношение к окружающим" id="amount3" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                                                                                <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">5. Внешность <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">2. Ум и способности(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical3" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="2. Ум и способности(желаемое)" id="amount3" style="border:0; color:#f6931f; font-weight: lighter;" />
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical4" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="5. Внешность" id="amount4" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                                                                                <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">6. Авторитет у сверстников <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">3. Характер <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical4" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="3. Характер" id="amount4" style="border:0; color:#f6931f; font-weight: lighter;" />
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical5" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="6. Авторитет у сверстников" id="amount5" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                                                                                <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">7. Уверенность в себе <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">3. Характер(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical5" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="3. Характер(желаемое)" id="amount5" style="border:0; color:#f6931f; font-weight: lighter;" />
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical6" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="7. Уверенность в себе" id="amount6" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">4. Отношение к окружающим <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical6" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="4. Отношение к окружающим" id="amount6" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
                                 </div>
-                            </div>
-                                                    
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">4. Отношение к окружающим(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical7" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="4. Отношение к окружающим(желаемое)" id="amount7" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">5. Внешность <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical8" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="5. Внешность" id="amount8" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">5. Внешность(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical9" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="5. Внешность(желаемое)" id="amount9" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">6. Авторитет у сверстников <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical10" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="6. Авторитет у сверстников" id="amount10" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">6. Авторитет у сверстников(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical11" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="6. Авторитет у сверстников(желаемое)" id="amount11" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">7. Уверенность в себе <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider ">
+                                        <div id="slider-vertical12" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="7. Уверенность в себе" id="amount12" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                            <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4">7. Уверенность в себе(желаемое) <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider slider-wishful">
+                                        <div id="slider-vertical13" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="7. Уверенность в себе(желаемое)" id="amount13" style="border:0; color:#f6931f; font-weight: lighter;" />
+                                    </div>
+                                </div>
+                                                                                    </div>
+
                         <br>
                         <button type="submit" class="btn btn-primary">Отправить результаты</button>
                     </div>

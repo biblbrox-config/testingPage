@@ -215,12 +215,19 @@ $questions57 = [
 
 $last_questions = [
     "1. Здоровье" ,
+    "1. Здоровье(желаемое)",
     "2. Ум и способности",
+    "2. Ум и способности(желаемое)",
     "3. Характер",
+    "3. Характер(желаемое)",
     "4. Отношение к окружающим",
+    "4. Отношение к окружающим(желаемое)",
     "5. Внешность",
+    "5. Внешность(желаемое)",
     "6. Авторитет у сверстников",
-    "7. Уверенность в себе"
+    "6. Авторитет у сверстников(желаемое)",
+    "7. Уверенность в себе",
+    "7. Уверенность в себе(желаемое)"
 ];
 
 ?>
@@ -247,7 +254,7 @@ $last_questions = [
     
     <script>
         window.onload = function () {
-            for (let i = 0; i < 7; i++) {
+            for (let i = 0; i < 14; i++) {
                 let elem = $('#slider-vertical' + i);
                 (function (i) {
                     elem.slider({
@@ -290,6 +297,11 @@ $last_questions = [
 
         .ui-slider-handle {
             background: #a42021 !important;
+            border: none !important;
+        }
+
+        .slider-wishful .ui-slider-handle {
+            background: #972ba4 !important;
         }
 
         hr {
@@ -299,6 +311,13 @@ $last_questions = [
             border-top: 1px solid #559ecc;
             margin: 1em 0;
             padding: 0;
+        }
+
+
+        .slider {
+            width: 100%;
+            left: 50%;
+            right: 50%;
         }
 
         .main-container {
@@ -311,6 +330,24 @@ $last_questions = [
 
         article {
             padding: 20px 10px;
+        }
+
+        .child {
+            /*display: inline-block;*/
+            /*background:blue;*/
+            /*margin:10px 0 0 2%;*/
+            flex-grow: 1;
+            /*height:100px;*/
+            width: 50%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            justify-content: flex-start;
+            width: 100%;
         }
 
         .freebirdCommonViewSecurequizSecureQuizBannerContainer {
@@ -522,28 +559,30 @@ $last_questions = [
                             </div>
                         </div>
                         <div class="freebirdFormviewerViewItemsPagebreakDescriptionText" style="padding-bottom: 15px; white-space: normal !important;">
-                            В этой части Вам нужно будет оценить самого себя с помощью 10-ми бальной шкалы по ниже перечисленным параметрам, где 1- это самый минимальный показатель, а 10- максимальный. Например, если бы все люди разделились по росту, тогда 1- это самый маленький рост на земле, а 10- самый высокий. Вам нужно выбрать, где находитесь Вы, относительно этих параметров!
+                            В этой части Вам нужно будет оценить самого себя с помощью 10-ми бальной шкалы по ниже перечисленным параметрам, где 1 - это самый минимальный показатель, а 10 - максимальный. Например, если бы все люди разделились по росту, тогда 1 - это самый маленький рост на земле, а 10 - самый высокий.
+                            Вам нужно выбрать, где находитесь Вы, относительно этих параметров!
+                            На шкалах с левой стороны нужно отметить ваши текущие параметры, справа - желаемые.
                         </div>
 
                         <?php $i = 0; ?>
-                        <?php foreach ($last_questions as $question): ?>
-                            <div style="margin-top: 70px;">
-                                <div class="freebirdFormviewerViewItemsItemItemHeader">
-                                    <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                                        <div class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4"><?php echo $question ?> <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-                                        <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>
+                        <div class="wrapper">
+                            <?php foreach ($last_questions as $question): ?>
+                                <div class="child" style="margin-top: 70px;">
+                                    <div  class="freebirdFormviewerViewItemsItemItemHeader">
+                                        <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
+                                            <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4"><?php echo $question ?> <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
+<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="slider <?php echo $i % 2 !== 0 ? "slider-wishful"  : ""?>">
+                                        <div id="slider-vertical<?php echo $i; ?>" style="height:400px; margin: 0 auto;"></div>
+                                        <input hidden class="form-check-input" type="text" name="<?php echo $question ?>" id="amount<?php echo $i; ?>" style="border:0; color:#f6931f; font-weight: lighter;" />
                                     </div>
                                 </div>
-                                <br>
-                                <div class="form-check">
-                                    <div id="slider-vertical<?php echo $i; ?>" style="height:400px;"></div>
-                                    <p>
-                                        <input hidden class="form-check-input" type="text" name="<?php echo $question ?>" id="amount<?php echo $i; ?>" style="border:0; color:#f6931f; font-weight: lighter;" />
-                                    </p>
-                                </div>
-                            </div>
-                            <?php $i++; ?>
-                        <?php endforeach; ?>
+                                <?php $i++; ?>
+                            <?php endforeach; ?>
+                        </div>
 
                         <br>
                         <button type="submit" class="btn btn-primary">Отправить результаты</button>
