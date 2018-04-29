@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff21193-7a8a-4957-9b47-dc1fff2f170e" name="Default" comment="hjjh">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +16,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="276">
               <caret line="567" lean-forward="true" selection-start-line="567" selection-end-line="567" />
               <folding>
                 <element signature="e#55193#55254#0#HTML" expanded="true" />
@@ -81,7 +81,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="747" />
     <option name="y" value="408" />
     <option name="width" value="533" />
@@ -136,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524844145586</updated>
-      <workItem from="1524844146911" duration="44648000" />
+      <workItem from="1524844146911" duration="45045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44648000" />
+    <option name="totallyTimeSpent" value="45045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="15" width="1282" height="786" extended-state="7" />
@@ -217,7 +217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="276">
           <caret line="567" lean-forward="true" selection-start-line="567" selection-end-line="567" />
           <folding>
             <element signature="e#55193#55254#0#HTML" expanded="true" />
