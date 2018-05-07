@@ -295,7 +295,7 @@ $last_questions = [
                         }
                     }
                 });
-            }
+            } 
         };
     </script>
 

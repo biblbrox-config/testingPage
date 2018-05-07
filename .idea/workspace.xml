@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dff21193-7a8a-4957-9b47-dc1fff2f170e" name="Default" comment="hjjh">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/success.html" afterDir="false" />
-    </list>
+    <list default="true" id="dff21193-7a8a-4957-9b47-dc1fff2f170e" name="Default" comment="hjjh" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +15,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="286" column="21" selection-start-line="286" selection-start-column="21" selection-end-line="286" selection-end-column="21" />
+            <state relative-caret-position="224">
+              <caret line="283" column="58" selection-start-line="283" selection-start-column="58" selection-end-line="283" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -121,16 +116,15 @@
       <workItem from="1524844146911" duration="45640000" />
       <workItem from="1525343523018" duration="42000" />
       <workItem from="1525343601904" duration="1433000" />
-      <workItem from="1525715837316" duration="3433000" />
+      <workItem from="1525715837316" duration="3912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50548000" />
+    <option name="totallyTimeSpent" value="51027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="16" width="1280" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="eSnippet Pro" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -251,8 +245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="286" column="21" selection-start-line="286" selection-start-column="21" selection-end-line="286" selection-end-column="21" />
+        <state relative-caret-position="224">
+          <caret line="283" column="58" selection-start-line="283" selection-start-column="58" selection-end-line="283" selection-end-column="58" />
         </state>
       </provider>
     </entry>
