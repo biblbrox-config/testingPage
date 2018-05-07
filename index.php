@@ -295,7 +295,7 @@ $last_questions = [
                         }
                     }
                 });
-            } 
+            }
         };
     </script>
 
@@ -397,8 +397,7 @@ $last_questions = [
     <div class="freebirdFormviewerViewFormBanner freebirdHeaderMast">
     </div>
     <div class="freebirdFormviewerViewCenteredContent">
-<!--        <form action="https://script.google.com/macros/s/AKfycbwjCC_KgMlDcUN_-Ge2Hpck9EBQ-0qrtaqlmjyOK16lIkT16Rc/exec"  method="POST" id="mG61Hd">-->
-        <form action="#"  method="POST" id="mG61Hd">
+        <form action="https://script.google.com/macros/s/AKfycbwjCC_KgMlDcUN_-Ge2Hpck9EBQ-0qrtaqlmjyOK16lIkT16Rc/exec"  method="POST" id="mG61Hd">
 
             <div class="freebirdFormviewerViewFormCard">
                 <div class="freebirdFormviewerViewAccentBanner freebirdAccentBackground"></div>
