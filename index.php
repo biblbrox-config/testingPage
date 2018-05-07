@@ -253,6 +253,22 @@ $last_questions = [
     <link rel="stylesheet" href="jquery-ui.min.css">
     
     <script>
+        let amountsChanged = [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+        ];
         window.onload = function () {
             for (let i = 0; i < 14; i++) {
                 let elem = $('#slider-vertical' + i);
@@ -264,17 +280,35 @@ $last_questions = [
                         max: 100,
                         value: 0,
                         slide: function (event, ui) {
+                            amountsChanged[i] = true;
                             $("#amount" + i).val(ui.value);
-                        }
+                        },
                     });
                 })(i);
                 $("#amount" + i).val(elem.slider("value"));
-                $("input").prop('required',true);
+                $("input").prop('required', true);
+                $("#mG61Hd").submit(function(e) {
+                    for (i = 0; i < 14; i++) {
+                        if (amountsChanged[i] !== true ) {
+                            e.preventDefault();
+                            $("#error-box").text("Вы должны установить значения слайдеров в заключительной части теста!");
+                        }
+                    }
+                });
             }
         };
     </script>
 
     <style>
+
+        #error-box {
+            color: white;
+            background: #b62122;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
         .ui-slider-range {
             background: #50c1ff !important;
         }
@@ -363,7 +397,9 @@ $last_questions = [
     <div class="freebirdFormviewerViewFormBanner freebirdHeaderMast">
     </div>
     <div class="freebirdFormviewerViewCenteredContent">
-        <form action="https://script.google.com/macros/s/AKfycbwjCC_KgMlDcUN_-Ge2Hpck9EBQ-0qrtaqlmjyOK16lIkT16Rc/exec"  method="POST" id="mG61Hd">
+<!--        <form action="https://script.google.com/macros/s/AKfycbwjCC_KgMlDcUN_-Ge2Hpck9EBQ-0qrtaqlmjyOK16lIkT16Rc/exec"  method="POST" id="mG61Hd">-->
+        <form action="#"  method="POST" id="mG61Hd">
+
             <div class="freebirdFormviewerViewFormCard">
                 <div class="freebirdFormviewerViewAccentBanner freebirdAccentBackground"></div>
                 <div class="freebirdFormviewerViewFormContent ">
@@ -573,7 +609,6 @@ $last_questions = [
                                     <div  class="freebirdFormviewerViewItemsItemItemHeader">
                                         <div style="width: 100%" class="freebirdFormviewerViewItemsItemItemTitleContainer">
                                             <div style=" line-height: 1.5em; height: 3em; text-align: center; width: 100%; margin: 0 auto;" class="freebirdFormviewerViewItemsItemItemTitle freebirdCustomFont" dir="auto" id="i1" role="heading" aria-level="2" aria-describedby="i.desc.1115019070 i4"><?php echo $question ?> <span class="freebirdFormviewerViewItemsItemRequiredAsterisk" aria-label="Required question">*</span></div>
-<!--                                            <div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1115019070" dir="auto"></div>-->
                                         </div>
                                     </div>
                                     <br>
@@ -587,7 +622,10 @@ $last_questions = [
                         </div>
 
                         <br>
-                        <button type="submit" class="btn btn-primary">Отправить результаты</button>
+                        <div id="error-box">
+                        </div>
+                        <br>
+                        <button id="submit-btn" type="submit" class="btn btn-primary">Отправить результаты</button>
                     </div>
                 </div>
             </div>
